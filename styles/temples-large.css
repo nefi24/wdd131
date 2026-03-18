@@ -1,0 +1,22 @@
+@media (min-width: 700px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        border: 1px solid var(--accent1-color);
+    }
+}
