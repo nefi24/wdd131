@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #f4c542;
+    --secondary-color: #1f4e79;
+    --accent-color: #d62828;
+    --light-color: rgba(255, 255, 255, 0.9);
+    --dark-color: #1f1f1f;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 8px solid var(--primary-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: var(--light-color);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.card-content strong {
+    color: var(--dark-color);
+}
+
+.weather-icon-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather-icon-mobile img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    border-top: 8px solid var(--primary-color);
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+/* Large view */
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero {
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .hero img {
+        min-height: 550px;
+        object-fit: cover;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        width: 280px;
+    }
+
+    .data-card {
+        top: 2rem;
+        left: 1.5rem;
+    }
+
+    .weather-card {
+        right: 1.5rem;
+        bottom: 2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-card h2::after {
+        content: " ⛅";
+        font-size: 1.8rem;
+    }
+
+    .card h2 {
+        text-align: left;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 0.75rem 1rem;
+        margin: -1rem -1rem 1rem -1rem;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-content p {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 1.05rem;
+        text-align: center;
+        background-color: var(--secondary-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        footer {
+            font-size: 1.05rem;
+        }
+    }
+}
