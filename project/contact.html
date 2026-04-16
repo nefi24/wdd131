@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact ElectroFix Guayaquil for AC and home appliance repair, maintenance, and installation services across Guayaquil.">
+    <meta name="author" content="Nefi Rodriguez">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/project.js" defer></script>
+
+    <title>Contact Us | ElectroFix Guayaquil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="project.html">ElectroFix Guayaquil</a>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">☰</button>
+
+            <ul class="navigation">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="project.html#services">Services</a></li>
+                <li><a href="project.html#about">About Us</a></li>
+                <li><a href="project.html#service-area">Service Area</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1>Contact Us</h1>
+                <p>We’re here to help. Reach out and we’ll get your appliances working again quickly.</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="contact-main-container">
+                <div class="contact-options">
+                    <h2>Get in Touch</h2>
+
+                    <div class="contact-card-list">
+                        <div class="contact-item">
+                            <img src="images/call-icon.jpg" alt="Call icon" class="contact-icon">
+                            <h3>Call Us</h3>
+                            <p>+593 987833879</p>
+                            <a href="tel:+593987833879" class="contact-button">Call Now</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp icon" class="contact-icon">
+                            <h3>WhatsApp</h3>
+                            <p>+593 987833879</p>
+                            <a href="https://wa.me/593987833879?text=Hello,%20I%20need%20appliance%20repair%20service"
+                                target="_blank" class="contact-button whatsapp">Message Now</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="images/email-icon.jpg" alt="Email icon" class="contact-icon">
+                            <h3>Email</h3>
+                            <p>electrofix@gmail.com</p>
+                            <a href="mailto:electrofix@gmail.com" class="contact-button secondary">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="AC Installation / Repair / Maintenance">AC Installation / Repair /
+                                Maintenance</option>
+                            <option value="Refrigerator Repair">Refrigerator Repair</option>
+                            <option value="Washing Machine Repair">Washing Machine Repair</option>
+                            <option value="Dryer Repair">Dryer Repair</option>
+                            <option value="General Maintenance">General Maintenance</option>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Tell us what appliance is having issues..." required></textarea>
+
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-area" class="service-area">
+            <div class="section-header">
+                <h2>Service Area</h2>
+                <p>We proudly serve clients across Guayaquil and nearby areas.</p>
+            </div>
+
+            <div class="service-area-container">
+                <div class="service-area-info">
+                    <h3>Areas We Cover</h3>
+                    <ul class="area-list">
+                        <li>Vía a la Costa</li>
+                        <li>Samborondón</li>
+                        <li>Isla Mocolí</li>
+                        <li>Urdesa</li>
+                        <li>Alborada</li>
+                        <li>Centenario</li>
+                        <li>Kennedy</li>
+                        <li>Ceibos</li>
+                        <li>Durán</li>
+                    </ul>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=Guayaquil,Ecuador&z=11&output=embed" width="100%"
+                        height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Map of Guayaquil service area">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-header">
+                <h2>Why Choose ElectroFix Guayaquil?</h2>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>8+ Years of Experience</h3>
+                    <p>Professional appliance repair backed by hands-on experience and technical training.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>Trusted Service</h3>
+                    <p>Known for honesty, responsibility, and reliable work that families can depend on.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3>Fast Response</h3>
+                    <p>Quick support for homes that need immediate AC and appliance repair solutions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/593987833879?text=Hello,%20I%20need%20appliance%20repair%20service" class="floating-whatsapp"
+        target="_blank" aria-label="Chat with us on WhatsApp">
+        <span>WhatsApp</span>
+    </a>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ElectroFix Guayaquil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
