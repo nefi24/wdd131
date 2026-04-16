@@ -13,10 +13,12 @@
     }
 
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    figure img {
-        border: 1px solid var(--accent1-color);
+@media (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
