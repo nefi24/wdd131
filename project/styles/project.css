@@ -842,3 +842,90 @@ html {
     color: var(--primary);
     margin-top: 0;
 }
+
+/* Service Areas specific styles */
+
+.areas-hero {
+    background: linear-gradient(to right, #1E3A5F, #2d4d75);
+    color: white;
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.areas-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.areas-hero h1 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+}
+
+.areas-hero p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.areas-intro {
+    padding: 4rem 1.5rem 2rem;
+    background-color: #f7f9fc;
+}
+
+.areas-grid-section {
+    padding: 1rem 1.5rem 4rem;
+    background-color: #f7f9fc;
+}
+
+.areas-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.area-card {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.area-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.area-card p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.areas-cta {
+    padding: 4rem 1.5rem;
+    background-color: #f7f9fc;
+}
+
+.areas-cta-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.areas-cta-box h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
