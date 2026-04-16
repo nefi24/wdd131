@@ -42,6 +42,10 @@
         gap: 2.5rem;
     }
 
+    .about-image {
+        height: 100%;
+    }
+
     .contact-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -50,10 +54,6 @@
     .contact-main-container {
         grid-template-columns: 1fr 1.2fr;
         gap: 2rem;
-    }
-
-    .trust-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .service-area-container {
@@ -66,5 +66,13 @@
 
     .map-wrapper iframe {
         height: 500px;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
